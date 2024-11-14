@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  font-family: "Outfit", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.first_content {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/sarajevo_2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first_content .first_content_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.first_content .first_content_text h1,
+.first_content .first_content_text p {
+  color: white;
+  text-align: center;
+}
+.first_content .first_content_text h1 {
+  font-size: 4rem;
+}
+.first_content .first_content_text p {
+  font-size: 1.3rem;
+  max-width: 45ch;
+  line-height: 2rem;
+}
+.first_content .first_content_text button {
+  width: 250px;
+  padding: 10px;
+  color: black;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 50px;
+  background-color: white;
+}
+.first_content .header {
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  color: #151418;
+}
+.first_content .header a {
+  color: white;
+}
+.first_content nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.first_content .logo a {
+  font-size: 24px;
+  font-weight: bold;
+}
+.first_content .logo a span {
+  color: #8739fa;
+}
+.first_content .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_content .menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+}
+.first_content .menu:hover a {
+  opacity: 0.4;
+}
+.first_content .menu a:hover {
+  opacity: 1;
+  color: #fff;
+}
+.first_content .menu-icon {
+  display: none;
+}
+.first_content #menu-toggle {
+  display: none;
+}
+.first_content #menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+.second_content {
+  width: 100%;
+}
+.second_content .about_us_content_second_slide,
+.second_content .about_us_content_first_slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.second_content .about_us_content_second_slide .text_content,
+.second_content .about_us_content_first_slide .text_content {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.second_content .about_us_content_second_slide .text_content h1,
+.second_content .about_us_content_first_slide .text_content h1 {
+  padding: 20px;
+}
+.second_content .about_us_content_second_slide .text_content p,
+.second_content .about_us_content_first_slide .text_content p {
+  width: 100%;
+}
+.second_content .about_us_content_second_slide img,
+.second_content .about_us_content_first_slide img {
+  width: 50%;
+}
+.second_content .about_us_content_second_slide p,
+.second_content .about_us_content_first_slide p {
+  font-size: 1.3rem;
+  width: 50%;
+  padding: 20px;
+}
+
+.third_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+}
+.third_content .contact_ways {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.third_content .contact_ways p {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.post_footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #151418;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .menu a {
+    margin-left: 12px;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=style.css.map */
